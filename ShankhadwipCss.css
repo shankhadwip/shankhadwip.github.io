@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #6e7dff, #6e94ff);
+    color: white;
+    border-bottom: 5px solid #4b54e1;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 20px 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-me, .skills, .work-experience, .contact {
+    background: linear-gradient(135deg, #ffe5e1, #fffcf9); /* Updated to orange gradient */
+    border: 3px solid #ff4500; /* Darker shade of orange for border */
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-me:hover, .skills:hover, .work-experience:hover, .contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill {
+    flex: 1 1 200px;
+    background: linear-gradient(135deg, #ffa07a, #fffcf9); /* Updated to pink-to-white gradient */
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info img {
+    margin-right: 0.8rem; /* Adequate spacing between logos and text */
+}
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.contact-value {
+    margin-left: 1.2rem; /* Increased spacing between logo and text */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark header {
+    background: linear-gradient(135deg, #1e1e1e, #303030);
+    border-bottom: 5px solid #444;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .about-me, body.dark .skills, body.dark .work-experience, body.dark .contact {
+    background: linear-gradient(135deg, #333, #444);
+    border: 3px solid #ff4500; /* Orange border in dark mode */
+}
+
+body.dark footer {
+    background-color: #1a1a1a;
+}
+
+/* Button Styles */
+.toggle-mode {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    margin-top: 1.5rem; /* Adjusted position */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-mode:hover {
+    background-color: #ff6b6b; /* Bright color on hover */
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
